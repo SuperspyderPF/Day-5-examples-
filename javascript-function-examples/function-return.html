@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript function with return</title>
+	<script>
+		function returner(p1){
+			return p1;
+			//The below code is unreachable.
+			
+			p1 += 9;
+			console.log(p1);
+			alert("Hello: " + p1);
+			
+		}
+		
+		var result = returner(8);
+		alert("The result is: " + result);
+	</script>
+</head>
+<body>
+</body>
+</html>

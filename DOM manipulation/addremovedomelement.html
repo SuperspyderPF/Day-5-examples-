@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+
+<button onclick="myFunction()">Add element</button>
+<button onclick="myFunctionX()">Add elementX</button>
+<button onclick="removeFunction()">Remove element</button>
+<button onclick="myFunction2()">Replace element</button>
+<script>
+
+function myFunction() {
+  var node = document.createElement("li");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
+function myFunctionX() {
+  var node = document.createElement("li");
+  var textnode = document.createTextNode("Wine");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
+function removeFunction() {
+  var list = document.getElementById("myList");
+  list.removeChild(list.lastChild);
+}
+function myFunction2() {
+  var node = document.createElement("li");
+  var textnode = document.createTextNode("Replace");
+  node.appendChild(textnode);
+  var list = document.getElementById("myList");
+  list.replaceChild(node,list.childNodes[0]);
+}
+</script>
+</body>
+</html>

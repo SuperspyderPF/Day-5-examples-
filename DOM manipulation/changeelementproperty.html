@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="p1">Hello!!! this is a paragragph.</p>
+<button onclick="myFunction();">Change innerHTML</button>
+<br/>
+<button onclick="myFunction1();">Change attribute</button>
+<br/>
+<button onclick="myFunction2();">Change style</button>
+<br/>
+<button onclick="myFunction3();">Set attribute</button>
+<script>
+function myFunction() {
+  document.getElementById("p1").innerHTML = "wELCOME";
+}
+
+function myFunction1() {
+    document.getElementById("p1").style = "border:1px dashed red; width:50%";
+}
+
+function myFunction2() {
+    document.getElementById("p1").style.border = "3px dotted green";
+}
+
+function myFunction3() {
+    document.getElementById("p1").setAttribute("style","border:1px solid pink; width:100");
+}
+</script>
+    
+</body>
+</html>
